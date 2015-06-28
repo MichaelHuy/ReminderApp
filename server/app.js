@@ -21,6 +21,11 @@ app.use(allowCrossDomain);
 app.use('/', require('./routes/index'));
 app.set('port', process.env.PORT || 3000);
 
+
+app.get('/', function(req, res){
+	res.sendfile('public/index.html');
+});
+
 var server = app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + server.address().port);
 });
