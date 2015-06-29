@@ -4,7 +4,7 @@ var call = {
   triggerCall: function(reminder) {
     return client.makeCall({
       to: reminder.user.phone,
-      from: '+16165225251',
+      from: '+12014312641',
       //url: 'http://20585314.ngrok.com/call/twiml/' + reminder.user._id + '/' + reminder._id
       url: 'http://rem.mybluemix.net/call/twiml/' + reminder.user._id + '/' + reminder._id      
     }, function(error, response) {

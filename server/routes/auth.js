@@ -4,7 +4,8 @@ var auth = {
   register: function(req, res) {
     var user = req.body;
 
-    if (!user.username || !user.password || !user.name || !user.phone) {
+console.log(JSON.stringify(user));
+    if (!user.username || !user.password || !user.name || !user.phone && false) {
       // Invalid Data
       res.status(400);
       res.json({
